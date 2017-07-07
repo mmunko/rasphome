@@ -2,7 +2,7 @@ from picamera import PiCamera
 from time import sleep, strftime, localtime
 import os
 
-camera = PiCamera
+camera = PiCamera()
 
 def takeSnap(filePath):
     camera.start_preview()
