@@ -5,4 +5,4 @@ import os
 camera = PiCamera()
 
 def takeSnap(filePath):
-    camera.capture(os.path.join(filePath,strftime('%y%m%d-%H%M%S',localtime()),'.jpeg'))
+    camera.capture(os.path.join(filePath,strftime('%y%m%d-%H%M%S.jpeg',localtime())))
